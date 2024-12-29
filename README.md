@@ -1,6 +1,8 @@
 Anime-Manager
 A Anime List manager for Aniworld
 
+Join my discord
+
 **Smart Login System**
 
  - Uses cookies for quick access
