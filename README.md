@@ -60,3 +60,12 @@ A Anime List manager for Aniworld
  - Ngrok tunneling
  - HTTP server
  - Mobile-responsive design
+
+
+
+ NOTE: **This project is in a very early stage of development.**
+  - I'm working on it in my free time.
+  - It might be buggy.
+  - Only works with Aniworld
+
+IMPORTANT: **If it asks you whether you are logged in, log in manually through the browser. Then simply respond "yes," and it will work just fine. (It is buggy if you respond "no," as it will attempt to log in using the credentials from the config.json file, which is not optimized and may not work properly.)**
