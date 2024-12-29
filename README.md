@@ -1,50 +1,62 @@
-# Anime-Manager
+Anime-Manager
 A Anime List manager for Aniworld
 
-Key Features:
-
-1. Smart Login System
+**Smart Login System**
 
  - Uses cookies for quick access
  - Fallback to credentials if needed
  - Remembers login state
- 
-2. Efficient Data Collection
+ - Auto-closes Opera GX for compatibility
+
+**Efficient Data Collection**
 
  - Multithreaded processing for speed
  - Captures all anime details:
     - Titles
     - Cover images
-   - Direct watch links
+    - Direct watch links
 
-3. Multiple Export Formats
+**Multiple Export Formats**
 
  - Clean TXT list for simple reference
  - Structured JSON for data processing
  - Beautiful Markdown gallery with:
-   - Clickable covers
-   - Watch buttons
-   - Emoji decorations
-   - Professional styling
+    - Clickable covers
+    - Watch buttons
+    - Emoji decorations
+    - Professional styling
 
-
-4. User-Friendly
+**User-Friendly**
 
  - Progress tracking
  - Status messages
- - Error handling
+ - Error handling 
+ - User-friendly interface
  - Clean interface
 
+**Enhanced Sharing Features**
 
-Perfect for:
+ - Local network sharing via QR code
+ - Worldwide sharing with ngrok integration
+ - Mobile-friendly preview
+ - Interactive HTML gallery
+ - Real-time sharing server
 
-Anime fans managing their watchlist
-Creating shareable collections
-Keeping track of series
-Quick access to favorite shows
-Technologies:
+**Perfect for:**
 
-Python
-Selenium WebDriver
-Multithreading
-JSON/Markdown formatting
+ - Anime fans managing their watchlist
+ - Creating shareable collections worldwide
+ - Keeping track of series
+ - Quick access to favorite shows
+ - Sharing collections with friends globally
+
+**Technologies:**
+
+ - Python
+ - Selenium WebDriver
+ - Multithreading
+ - JSON/Markdown formatting
+ - QR Code generation
+ - Ngrok tunneling
+ - HTTP server
+ - Mobile-responsive design
