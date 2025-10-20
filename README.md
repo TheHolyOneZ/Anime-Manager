@@ -1,73 +1,149 @@
-Anime-Manager
-A Anime List manager for Aniworld
+# 📘 AniWorld Watchlist Manager V2 — End-User README
 
-Join my discord
+## 🧩 Overview
 
-**Smart Login System**
+AniWorld Watchlist Manager V2 is a powerful yet simple desktop application designed to help you **extract, organize, and share your anime watchlist** from [AniWorld.to](https://aniworld.to/). With its modern design, automation features, and export options, it transforms your watchlist into a beautiful, interactive library.
 
- - Uses cookies for quick access
- - Fallback to credentials if needed
- - Remembers login state
- - Auto-closes Opera GX for compatibility
+This tool is made for **end users**, not developers — no coding or technical setup required.
 
-**Efficient Data Collection**
+---
 
- - Multithreaded processing for speed
- - Captures all anime details:
-    - Titles
-    - Cover images
-    - Direct watch links
+## ✨ Key Features
 
-**Multiple Export Formats**
+Here’s everything this script can do:
 
- - Clean TXT list for simple reference
- - Structured JSON for data processing
- - Beautiful Markdown gallery with:
-    - Clickable covers
-    - Watch buttons
-    - Emoji decorations
-    - Professional styling
+### 🔍 Watchlist Extraction
 
-**User-Friendly**
+* Automatically logs into your **AniWorld account** and retrieves your entire watchlist.
+* Works with **Chrome**, **Edge**, **Opera**, and **Brave** browsers.
+* Supports **fast mode** using a temporary browser profile for quicker startup.
 
- - Progress tracking
- - Status messages
- - Error handling 
- - User-friendly interface
- - Clean interface
+### 📊 Smart Filtering Options
 
-**Enhanced Sharing Features**
+* **Series Only** – Extract just anime series.
+* **Movies Only** – Extract only anime films.
+* **Both (Recommended)** – Capture everything instantly.
+* Optional **anime limit** for partial exports (e.g., first 20 shows).
 
- - Local network sharing via QR code
- - Worldwide sharing with ngrok integration
- - Mobile-friendly preview
- - Interactive HTML gallery
- - Real-time sharing server
+### 💾 Multiple Export Formats
 
-**Perfect for:**
+After extraction, the tool automatically generates your watchlist in several easy-to-use formats:
 
- - Anime fans managing their watchlist
- - Creating shareable collections worldwide
- - Keeping track of series
- - Quick access to favorite shows
- - Sharing collections with friends globally
+* `watchlist.txt` — Simple text version
+* `watchlist.json` — Structured data file
+* `watchlist.md` — Markdown format with covers and links
+* `watchlist_preview.html` — Interactive webpage with filters & search
+* `watchlist_gallery.html` — Modern image gallery view
 
-**Technologies:**
+### 💡 Modern Graphical Interface
 
- - Python
- - Selenium WebDriver
- - Multithreading
- - JSON/Markdown formatting
- - QR Code generation
- - Ngrok tunneling
- - HTTP server
- - Mobile-responsive design
+* Clean, dark-themed interface built with **CustomTkinter**.
+* One-click actions for extraction, preview, and sharing.
+* Real-time activity log and progress tracking.
+* Built-in help & information panel with detailed guidance.
 
+### 🌍 QR Code Sharing
 
+* Share your watchlist as a web page using a **QR code**.
+* Works in two modes:
 
- NOTE: **This project is in a very early stage of development.**
-  - I'm working on it in my free time.
-  - It might be buggy.
-  - Only works with Aniworld
+  * **Local Network Mode:** Access your list via phone or another device on the same Wi-Fi.
+  * **Ngrok Mode:** Public sharing through the internet using your Ngrok token.
 
-IMPORTANT: **If it asks you whether you are logged in, log in manually through the browser. Then simply respond "yes," and it will work just fine. (It is buggy if you respond "no," as it will attempt to log in using the credentials from the config.json file, which is not optimized and may not work properly.)**
+### 📁 File & Export Management
+
+* Automatically organizes exports into folders:
+
+  * `exports/` → Text, JSON, and Markdown files.
+  * `exports_website/` → HTML previews and galleries.
+* Creates QR codes for sharing (`watchlist_qr.png`).
+* Saves and reloads your settings for convenience.
+
+### ⚡ Browser Automation
+
+* Detects installed browsers automatically.
+* Manages login cookies for faster re-login.
+* Can kill leftover browser processes for a clean start.
+* Runs optimized headless browser sessions for faster scraping.
+
+### 🔐 Security & Privacy
+
+* Credentials and cookies are **stored locally only** — never uploaded.
+* You can delete saved data anytime by removing the `data/` folder.
+* Uses official Selenium browser automation for safety.
+
+### 🎨 Visual Exports
+
+* The HTML preview offers a stylish, responsive layout.
+* Supports search and filtering (Series, Movies, Both).
+* Works completely offline once generated.
+
+### 🛠️ Built-in Troubleshooting Tools
+
+* Displays clear logs and messages during every operation.
+* Warns when filters might slow the process.
+* Suggests alternative browser setups when needed.
+
+---
+
+## 🖥️ System Requirements
+
+* **OS:** Windows 10 or higher
+* **Browser:** Chrome, Edge, Opera, or Brave
+* **Internet:** Required for login and initial extraction
+* **Python:** Automatically handled — dependencies install themselves
+
+---
+
+## 🚀 Quick Start Guide
+
+1. **Run `WatchList.py`** — dependencies install automatically.
+2. **Enter your details:** email, password, optional Ngrok token.
+3. **Select your browser** and desired **filter mode**.
+4. **Enable Fast Mode** for quicker startup (manual login required).
+5. Click **Extract Watchlist** — the process begins automatically.
+6. After completion, click **Preview HTML** or **Share via QR**.
+
+---
+
+## 🌐 Sharing Your Watchlist
+
+* The tool starts a local or Ngrok server when sharing.
+* A QR code will be generated — scan it with your phone to open the watchlist.
+* Keep the app open while sharing; closing it stops the connection.
+
+---
+
+## ⚙️ Troubleshooting
+
+| Problem                   | Cause                                | Fix                                                 |
+| ------------------------- | ------------------------------------ | --------------------------------------------------- |
+| Browser not detected      | Missing supported browser            | Install Chrome, Edge, Opera, or Brave               |
+| Login not working         | Incorrect credentials                | Log in manually when prompted                       |
+| QR code doesn’t work      | Missing Ngrok token or closed server | Get Ngrok token from [ngrok.com](https://ngrok.com) |
+| Extraction takes too long | Filter mode active                   | Use **Both (Recommended)** for faster results       |
+| HTML won’t open           | Export missing                       | Re-run extraction first                             |
+
+---
+
+## 🧰 Behind the Scenes (For Transparency)
+
+* Built using **Python**, **Selenium**, **CustomTkinter**, **Undetected ChromeDriver**, **PyNgrok**, and **Pillow**.
+* Automatically installs and updates required dependencies.
+* Creates optimized, offline-friendly HTML pages.
+
+---
+
+## 💙 Credits
+
+* **Developer:** [TheHolyOneZ](https://github.com/TheHolyOneZ)
+* **Project:** AniWorld Watchlist Manager V2
+* **License:** Personal and educational use only
+
+---
+
+## 🏁 Enjoy Your Anime Library
+
+This tool turns your AniWorld watchlist into a shareable, searchable anime library — beautifully organized and easy to use.
+
+If you love it, please star the repository or share your feedback to support future updates!
