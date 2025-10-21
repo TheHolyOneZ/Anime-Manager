@@ -1,0 +1,41 @@
+{
+  "total": 5,
+  "exported_at": "2025-10-21 21:42:39",
+  "anime": [
+    {
+      "name": "The Fragrant Flower Blooms with Dignity",
+      "link": "https://aniworld.to/anime/stream/the-fragrant-flower-blooms-with-dignity",
+      "cover_image": "https://aniworld.to/public/img/cover/the-fragrant-flower-blooms-with-dignity-stream-cover-CVsuD1nCoOa88bpXjn53Tmzh36KaSUFW_200x300.png",
+      "type": "Series",
+      "episodes": 14
+    },
+    {
+      "name": "Fire Force",
+      "link": "https://aniworld.to/anime/stream/fire-force",
+      "cover_image": "https://aniworld.to/public/img/cover/fire-force-stream-cover-YABtOYerrvqj9VKVLyrImsNUjvADnMYu_200x300.jpg",
+      "type": "Series",
+      "episodes": 27
+    },
+    {
+      "name": "Ninja Kamui",
+      "link": "https://aniworld.to/anime/stream/ninja-kamui",
+      "cover_image": "https://aniworld.to/public/img/cover/ninja-kamui-stream-cover-OjgltHIAxWQhmGDREWZEZbWip1HvOY2G_200x300.jpg",
+      "type": "Series",
+      "episodes": 14
+    },
+    {
+      "name": "Kokoro Connect",
+      "link": "https://aniworld.to/anime/stream/kokoro-connect",
+      "cover_image": "https://aniworld.to/public/img/cover/kokoro-connect-stream-cover-KdSDJddIiboexBtK1U9uozA09ympyLQW_200x300.jpg",
+      "type": "Series+Movies",
+      "episodes": 14
+    },
+    {
+      "name": "My Little Monster",
+      "link": "https://aniworld.to/anime/stream/my-little-monster",
+      "cover_image": "https://aniworld.to/public/img/cover/my-little-monster-stream-cover-qvRL52cuassjlGGPbh91MBoszsMXuFko_200x300.jpg",
+      "type": "Series",
+      "episodes": 14
+    }
+  ]
+}
